@@ -1,4 +1,5 @@
-﻿using FluentAssertions;
+﻿using System.Threading.Tasks;
+using FluentAssertions;
 using Xunit;
 
 namespace FancyLibrary.Tests
@@ -16,17 +17,17 @@ namespace FancyLibrary.Tests
         [InlineData(15, "FizBuz")]
         [InlineData(15 * 1024 * 1024, "FizBuz")]
         [InlineData(-15 * 1024 * 1024, "FizBuz")]
-        public void GivenAnIntegerWhenFizBuzThenProduceString(int input, string expected)
+        public async Task GivenAnIntegerWhenFizBuzThenProduceString(int input, string expected)
         {
             var calculator = new RateCalculator();
 
-            var output = calculator.FizBuz(input);
+            var output = await calculator.FizBuz(input);
 
             output.Should().Be(expected);
         }
 
         [Fact]
-        public void GivenThreeWhenFizBuzThenFiz()
+        public async Task GivenThreeWhenFizBuzThenFiz()
         {
             //AAA
 
@@ -35,7 +36,7 @@ namespace FancyLibrary.Tests
             const int input = 3;
 
             //Act
-            var output = calculator.FizBuz(input);
+            var output = await calculator.FizBuz(input);
 
             //Assert
             output.Should().Be("Fiz");
