@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FancyLibrary", "FancyLibrary\FancyLibrary.csproj", "{EF8FC43C-327E-43B6-9091-C20C205BFE2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FancyLibrary.Tests", "FancyLibrary.Tests\FancyLibrary.Tests.csproj", "{A8A1945A-B9F3-4910-A127-075522E0DCB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF8FC43C-327E-43B6-9091-C20C205BFE2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF8FC43C-327E-43B6-9091-C20C205BFE2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF8FC43C-327E-43B6-9091-C20C205BFE2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF8FC43C-327E-43B6-9091-C20C205BFE2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8A1945A-B9F3-4910-A127-075522E0DCB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8A1945A-B9F3-4910-A127-075522E0DCB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8A1945A-B9F3-4910-A127-075522E0DCB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8A1945A-B9F3-4910-A127-075522E0DCB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35AA0772-07C0-4174-A47B-DB510CB5A26D}
+	EndGlobalSection
+EndGlobal
